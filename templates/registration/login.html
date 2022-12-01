@@ -11,6 +11,16 @@
         width: 500px;
         margin: auto;
     }
+    .link-style{
+        text-decoration: none;
+        color: white;
+    }
+    .link-style:hover {
+        text-decoration: none;
+        color: grey;
+        transform: scale(1.25);
+    }
+    
 </style>
 
 {% endblock %}
@@ -26,9 +36,6 @@
         {{form | crispy}}
         <input type="hidden" name="next" value = "{{next}}"/>
         <input type="submit" value="Login" class="btn btn-success">
-
-        <!-- <input type="submit" value="Login" class="btn btn-success"> -->
-
     </form>
 
     <div class="row mt-4">
