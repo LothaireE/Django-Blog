@@ -28,7 +28,7 @@ DEBUG = False
 
 
 ALLOWED_HOSTS = [
-    'stark-earth-46317.herokuapp.com'
+    'stark-earth-46317.herokuapp.com', '127.0.0.1'
 ]
 
 
