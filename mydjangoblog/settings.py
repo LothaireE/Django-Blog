@@ -100,15 +100,21 @@ DATABASES = {
     }
 }
 
+AUTHENTICATION_BACK2ENDS = [
+    'social_core.backends.github.GithubOAuth2'
+    'social_core.backends.linkedin.LinkedinOAuth2'
 
-# SOCIAL_AUTH_FACEBOOK_KEY = '' # Facebook App ID
-# SOCIAL_AUTH_FACEBOOK_SECRET = '' # Facebook App Secret
+    'django.contrib.auth.backends.ModelBackend'
 
-# SOCIAL_AUTH_GITHUB_KEY = ''
-# SOCIAL_AUTH_GITHUB_KEY = ''
+]
 
-# SOCIAL_AUTH_LINKEDIN_OAUTH2_KEY = ''
-# SOCIAL_AUTH_LINKEDIN_OAUTH2_KEY = ''
+
+
+SOCIAL_AUTH_GITHUB_KEY = '89e15e3cc9300b870b16'
+SOCIAL_AUTH_GITHUB_SECRET = ' 3b0cad5d3719371aeae19e116046a3c1f815f43b'
+
+SOCIAL_AUTH_LINKEDIN_OAUTH2_KEY = '78zqtmtzt7vpzt'
+SOCIAL_AUTH_LINKEDIN_OAUTH2_SECRET = 'G44KNHUO8n5WrH4Q'
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
