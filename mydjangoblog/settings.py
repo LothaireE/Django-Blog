@@ -27,7 +27,9 @@ DEBUG = True
 # DEBUG = False
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'stark-earth-46317.herokuapp.com'
+]
 
 
 # Application definition
