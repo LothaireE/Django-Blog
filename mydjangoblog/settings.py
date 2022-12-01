@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "crispy_forms",
     "crispy_bootstrap5",
-]
+    'social_django',
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -52,7 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'mydjangoblog.urls'
@@ -86,6 +87,14 @@ DATABASES = {
     }
 }
 
+# SOCIAL_AUTH_FACEBOOK_KEY = '' # Facebook App ID
+# SOCIAL_AUTH_FACEBOOK_SECRET = '' # Facebook App Secret
+
+# SOCIAL_AUTH_GITHUB_KEY = ''
+# SOCIAL_AUTH_GITHUB_KEY = ''
+
+# SOCIAL_AUTH_LINKEDIN_OAUTH2_KEY = ''
+# SOCIAL_AUTH_LINKEDIN_OAUTH2_KEY = ''
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
