@@ -82,23 +82,23 @@ WSGI_APPLICATION = 'mydjangoblog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dfrcdba8qnvdq3',
-        'HOST': 'ec2-54-204-241-136.compute-1.amazonaws.com',
-        'PORT': 5432,
-        'USER': 'ikjehkhtbettrz',
-        'PASSWORD': '99e726bfa53fd58ce53bf3550bf89a068900fdff72ed24f0873673983ab50202'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'dfrcdba8qnvdq3',
+#         'HOST': 'ec2-54-204-241-136.compute-1.amazonaws.com',
+#         'PORT': 5432,
+#         'USER': 'ikjehkhtbettrz',
+#         'PASSWORD': '99e726bfa53fd58ce53bf3550bf89a068900fdff72ed24f0873673983ab50202'
+#     }
+# }
 
 AUTHENTICATION_BACK2ENDS = [
     'social_core.backends.github.GithubOAuth2'
