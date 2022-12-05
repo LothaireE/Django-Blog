@@ -28,7 +28,7 @@ DEBUG = False
 
 
 ALLOWED_HOSTS = [
-    'stark-earth-46317.herokuapp.com', '127.0.0.1'
+    'stark-earth-46317.herokuapp.com', '127.0.0.1', 'lothaire.pythonanywhere.com'
 ]
 
 
