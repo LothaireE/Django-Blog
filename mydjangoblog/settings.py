@@ -23,12 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-umr)uv0h1eem8erms3#ebvhz4(5!wzi(pux5i733^+km@t84a*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = False
+DEBUG = True
+# DEBUG = False
 
 
 ALLOWED_HOSTS = [
-    'stark-earth-46317.herokuapp.com', '127.0.0.1', 'lothaire.pythonanywhere.com'
+    'stark-earth-46317.herokuapp.com', '127.0.0.1', 'lothaire.pythonanywhere.com', '0.0.0.0'
 ]
 
 
@@ -60,7 +60,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mydjangoblog.urls'
 
-#        'DIRS': ['templates'],
+# 'DIRS': ['templates'],
+# 'DIRS': [os.path.join(BASE_DIR, 'templates')],
+# 'DIRS': [path.joinpath(BASE_DIR, 'templates')],
+#  'DIRS': [BASE_DIR.joinpath('templates')],
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -69,7 +72,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',
+                'django.template.context_processors.request',['templates'],
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
